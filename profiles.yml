@@ -1,0 +1,14 @@
+jaffle_shop:
+  target: DEVELOPMENT
+  outputs:
+    DEVELOPMENT:
+      type: snowflake
+      account: ny70791.us-central1.gcp
+      user: "{{ env_var('SNOWFLAKE_USERNAME') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: DEVELOPER_ROLE
+      database: TEST
+      warehouse: ETL_WH
+      schema: PUBLIC
+      threads: 16
+      client_session_keep_alive: False

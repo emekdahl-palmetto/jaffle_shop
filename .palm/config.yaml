@@ -1,0 +1,3 @@
+image_name: jaffle_shop
+plugins: [dbt]
+protected_branches: []
